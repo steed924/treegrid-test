@@ -8,7 +8,6 @@ import { TreeGridComponent } from '@syncfusion/ej2-angular-treegrid';
 })
 export class AppComponent {
   public data: DataManager;
-  public pageSetting: Object;
 
   @ViewChild('treegrid')
   public treegrid: TreeGridComponent;
@@ -19,6 +18,5 @@ export class AppComponent {
       adaptor: new WebApiAdaptor(),
       offline: true,
     });
-    this.pageSetting = { pageCount: 3 };
   }
 }
